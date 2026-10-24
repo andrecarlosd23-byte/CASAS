@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vizinhos 3D — construção de casas multiplayer</title>
+  <meta name="description" content="Simulador 3D de construção de casas para duas pessoas, direto no navegador.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+  <link rel="stylesheet" href="/style.css">
+  <script type="importmap">
+  { "imports": { "three": "/vendor/three.module.js", "three/addons/": "/vendor/addons/" } }
+  </script>
+</head>
+<body>
+  <canvas id="c" tabindex="0"></canvas>
+  <div id="hud"></div>
+  <div id="start" class="overlay"></div>
+  <div id="editor" class="overlay hidden"></div>
+  <div id="loading" class="overlay center-msg hidden">Conectando…</div>
+  <div id="fps"></div>
+  <noscript>Ative o JavaScript para jogar.</noscript>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
