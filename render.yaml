@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vizinhos-3d
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: DATABASE_URL
+        sync: false   # cole a connection string do Neon (PostgreSQL gratuito) no painel do Render
